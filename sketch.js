@@ -9,12 +9,22 @@ function setup() {
   console.log(1);
   engine = Engine.create();
   world = engine.world;
-  box1 = new Box(200,300,50,50);
-  box2 = new Box(240,100,50,100);
- 
   ground = new Ground(600, height ,1200,20);
-  pig1 = new Pig(200,200);
-  log1 = new Log(100,300,100,90);
+  box1 = new Box(700,320,70,70);
+  box2 = new Box(920,320,70,70);
+  pig1 = new Pig(810,350);
+  log1 = new Log(810,260,300,90);
+
+  box3 = new Box(700,240,70,70);
+  box4 = new Box(920,240,70,70);
+  pig2 = new Pig(810,220);
+  log2 = new Log(810,180,300,90);
+
+  box5 = new Box(810,100,70,70);
+  log3 = new Log(760,130,150,40)
+  log4 = new Log(870,130,150,-40)
+
+  bird = new Bird(500,100);
 }
 
 function draw() {
@@ -23,11 +33,20 @@ function draw() {
   Engine.update(engine);
 
 
-
+  ground.display();
   box1.display();
   box2.display();
- 
-  ground.display();
   pig1.display();
   log1.display();
+
+  box3.display();
+  box4.display();
+  pig2.display();
+  log2.display();
+
+  box5.display();
+  log3.display();
+  log4.display();
+
+  bird.display();
 }

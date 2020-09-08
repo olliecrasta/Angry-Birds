@@ -1,4 +1,2 @@
-### Angry bird game 
-
-https://olliecrasta.github.io/c24/index.html
-
+# p5.play-boilerplate
+Boiler plate for p5.play
